@@ -5,7 +5,7 @@ export default makeStyles(() => ({
     color: "#61dafb",
   },
   radioLabel: {
-    color: "#F3F3F3",
+    color: "#F3F3F3 !important", //Déconseillé d'utiliser !important: Ecrase toutes les règles css
   },
   slider: {
     width: "15%",
