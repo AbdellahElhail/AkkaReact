@@ -18,7 +18,7 @@ const Home = () => {
 
   const radioComponant=(val)=>(
         <>
-        <FormLabel sx={{ color: "#F3F3F3"}} >{val}</FormLabel>  
+        <FormLabel className={style.radioLabel} >{val}</FormLabel>  
         <Radio
           checked={radioButtonValue === val}
           onChange={radioHandleChange}
