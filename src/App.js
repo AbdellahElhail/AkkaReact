@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './screens/HomeScreen'
-import About from './screens/AboutScreen'
+import Home from './homeScreen'
+import About from './aboutScreen'
 import Logo from './componants/Logo'
 import NavigationBar from './componants/NavigationBar'
 function App() {
