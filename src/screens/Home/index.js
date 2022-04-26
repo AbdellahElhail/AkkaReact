@@ -2,7 +2,7 @@ import {Radio,FormLabel,Slider,Box, Container, Grid} from "@mui/material";
 import { useEffect, useState } from "react";
 import useStyles from './styles';
 import axios from 'axios';
-import CountryCadre from "../componants/CountryCadre";
+import CountryCadre from "../../componants/CountryCadre";
 
 const Home = () => {
   const [radioButtonValue, setRadioButtonValue] = useState("a");
