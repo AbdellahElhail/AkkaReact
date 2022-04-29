@@ -1,17 +1,19 @@
-import { Grid } from "@mui/material";
+import { CountryCadreBlock, CountryFlag, CountryOverLayer, CountryOverLayerText } from "./styles";
 
-const CountryCadre = ({country})=> {
-
-    return (
-    <Grid item xs={12} sm={6} md={3} lg={1}>
-        <img src={country.flags.svg} style={{width:"100%"}}/>
-        <div style={{display:"none"}}>
-            <h2>{country.name.common}</h2>
-            <h4>{country.capital}</h4>
-            <h1>{country.population}</h1>
-        </div>
-    </Grid>)
-}
-
+const CountryCadre = ({ country }) => {
+  return (
+    <CountryCadreBlock >
+      <CountryFlag
+        src={country.flags.svg}
+        alt={`${country.name.common} Flag`}
+      />
+      <CountryOverLayer>
+        <CountryOverLayerText>{country.name.common}</CountryOverLayerText>
+        <CountryOverLayerText>{country.capital}</CountryOverLayerText>
+        <CountryOverLayerText>{country.population}</CountryOverLayerText>
+      </CountryOverLayer>
+    </CountryCadreBlock>
+  );
+};
 
 export default CountryCadre;
