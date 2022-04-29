@@ -1,12 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
 export default makeStyles(() => ({
-  radioButton: {
-    color: "#61dafb",
-  },
-  radioLabel: {
-    color: "#F3F3F3",
-  },
   slider: {
     width: "15%",
     marginRight: 10,
